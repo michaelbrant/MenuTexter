@@ -15,7 +15,7 @@ $ sudo easy_install bs4
 $ sudo easy_install configparser
 $ sudo yum install git-all
 ```
-2. Move all code to /home/ec2-user
+2. git clone https://github.com/michaelbrant/MenuTexter
 3. edit config.cfg with either your own gmail account or add the password that I will give to you. (I'm not posting that here)
 
 ### Running the MenuTexter
