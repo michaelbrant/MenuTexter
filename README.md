@@ -11,4 +11,4 @@ To Run the MenuTexter:
 
 At this point running 
 $python MenuTexter.py L
-will send a text of today's lunch menu to whatever phone number is in emailList.txt
+will send a text of today's lunch menu to whatever phone numbers are in emailList.txt
