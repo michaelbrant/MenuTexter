@@ -13,6 +13,7 @@ I'm not going to post here. This already has the MenuTexter installed using the 
 $ sudo yum update
 $ sudo easy_install bs4
 $ sudo easy_install configparser
+$ sudo yum install git-all
 ```
 2. Move all code to /home/ec2-user
 3. edit config.cfg with either your own gmail account or add the password that I will give to you. (I'm not posting that here)
