@@ -40,7 +40,7 @@ will send a text of the dinner menu.
 If you are not receiving a text it is quite possible that there is no lunch/dinner menu for today.
 Uncomment the three lines in pullMenu.py to test specific days that you know have lunch or dinner menus
 
-###To Make the MenuTexter Automatic
+### Make the MenuTexter Automatic
 ```sh
 $ crontab -e
 ```
