@@ -59,7 +59,6 @@ def sendMail(menuList, DorL):
 def sendHello(receiver):
     msg = MIMEMultipart()
     msg['From'] = 'Cafe Menu'
-    #msg['To'] = ', '.join(recipients)
     msg['Subject'] = 'Welcome to the Cafeteria Menu Texter'
     menuList = []
     menuList.append("\nA text of the daily lunch menu will be sent to you Monday - Friday before lunch\nReply 'Stop' to stop receiving texts \n\n Developed by M.D.B ")
@@ -90,7 +89,6 @@ def sendOneMenu(OneReceiver, DorL, url):
     menuList = myHTMLParser.parse(url)
     msg = MIMEMultipart()
     msg['From'] = 'Cafe Menu'
-    #msg['To'] = ', '.join(recipients)
     msg['Subject'] = 'The '+ DorL +' Menu for today:'
     for item in menuList:
         msg.attach(MIMEText(item))
