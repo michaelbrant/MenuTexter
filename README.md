@@ -3,9 +3,12 @@ Automatically sends texts of Widener University's cafeteria Lunch and Dinner men
 
 To Run the MenuTexter:
 1. Launch a t2.micro Amazon Linux AMI EC2 instance.
-2. sudo yum update
-3. sudo easy_install bs4
-4. sudo easy_install configparser
+2. 
+'''sh
+$sudo yum update
+$sudo easy_install bs4
+$sudo easy_install configparser
+'''sh
 5. Move all code to /home/ec2-user
 6. edit config.cfg with either your own gmail account or add the password that I will give to you. (I'm not posting that here)
 
