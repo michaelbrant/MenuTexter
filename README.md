@@ -19,7 +19,7 @@ $ sudo yum install git-all
 3. edit config.cfg with either your own gmail account or add the password that I will give to you. (I'm not posting that here)
 
 ### Running the MenuTexter
-Send a text to the gmail saying Start, if you did not add your own then it is menutexter@gmail.com
+Send a text to menutexter@gmail (or whatever gmail account you created) saying Start
 
 Next, run 
 ```sh
