@@ -31,7 +31,7 @@ for x in range(i):
     email_message = email.message_from_string(raw_email_string)
     email_from = str(email.header.make_header(email.header.decode_header(email_message['From'])))
 
-    # Body details
+    # Look at Email Body
     for part in email_message.walk():
 	    #if part.get_content_type() == "text/plain":
 	    body = part.get_payload(decode=True)
@@ -42,7 +42,7 @@ for x in range(i):
 			    with open("emailList.txt", "a") as myfile:
 				    myfile.write(email_from)
 				    myfile.write("\n")
-		    if body.find("Stop") >= 0:
+		    if body.find("Stop") >= 0 or body.find("STOP") >= 0:
 			    print("UNSUBSCRIBED")
 			    emailListRemover.remove(email_from)
 		    if body.find("Dinner") >= 0 or body.find("dinner") >=0 or body.find("DINNER") >=0:
