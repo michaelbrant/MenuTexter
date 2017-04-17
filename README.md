@@ -6,7 +6,8 @@ The HTML is parsed from https://widener.campusdish.com/Commerce/Catalog/Menus.as
 ### To Install the MenuTexter:
 You can remotely connect via SSH into ec2-52-207-132-210.compute-1.amazonaws.com with the username ec2-user and the private key that
 I'm not going to post here. This already has the MenuTexter installed using the email menutexter@gmail.com 
--OR-
+
+-OR, If you want your own server-
 1. Launch a t2.micro Amazon Linux AMI EC2 instance and run the following commands:
 ```sh
 $ sudo yum update
