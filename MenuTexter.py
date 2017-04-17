@@ -12,6 +12,7 @@ configParser.read(configFilePath)
 USERNAME = str(configParser.get('email-login', 'username'))
 PASSWORD = str(configParser.get('email-login', 'password'))
 
+#Look at Command Line Arguments. L = Lunch, D = Dinner
 def main():
     if len(sys.argv) > 1:
         if sys.argv[1] == 'L':
@@ -23,8 +24,8 @@ def main():
             menuList = myHTMLParser.parse(url)
             sendMail(menuList, "Dinner")
 
+#Read the file containing phone numbers
 def getRecipients():
-    #Read the file containing phone numbers
     readReceivers = open("emailList.txt", "r")
     receiverString = readReceivers.read()
     receiverList = receiverString.splitlines(receiverString.count('\n'))
@@ -53,7 +54,8 @@ def sendMail(menuList, DorL):
             print("Emailing:" + recipient)
         except:
             print( "ERROR")
-
+            
+#Sends Initial message after receiving "Start"
 def sendHello(receiver):
     msg = MIMEMultipart()
     msg['From'] = 'Cafe Menu'
@@ -73,18 +75,19 @@ def sendHello(receiver):
     mailserver.login(USERNAME, PASSWORD)
     mailserver.sendmail(USERNAME,receiver,msg.as_string())
     mailserver.quit()
-
+    
+#Sends Lunch menu if received a text saying "Lunch"
 def sendOneLunchMenu(receiver):
     url = pullMenu.getLunchURL()
     sendOneMenu(receiver,"Lunch",url)
-
+    
+#Sends Dinner menu if received a text saying "Dinner"
 def sendOneDinnerMenu(receiver):
     url = pullMenu.getDinnerURL()
     sendOneMenu(receiver,"Dinner",url)
 
 def sendOneMenu(OneReceiver, DorL, url):
     menuList = myHTMLParser.parse(url)
-
     msg = MIMEMultipart()
     msg['From'] = 'Cafe Menu'
     #msg['To'] = ', '.join(recipients)
