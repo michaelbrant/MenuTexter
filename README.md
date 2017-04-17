@@ -1,6 +1,7 @@
 # MenuTexter
 Automatically sends texts of Widener University's cafeteria Lunch and Dinner menus.
-The HTML is parsed from https://widener.campusdish.com/Commerce/Catalog/Menus.aspx?LocationId=213 using a python library called Beautiful Soup 4
+The HTML is parsed from https://widener.campusdish.com/Commerce/Catalog/Menus.aspx?LocationId=213 using a python library called Beautiful Soup 4. 
+*Disclaimer: The messages MenuTexter sends aren't actually SMS texts. They are emails. Sending SMS would cost money*
 
 
 ### To Install the MenuTexter:
