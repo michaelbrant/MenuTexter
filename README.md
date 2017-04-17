@@ -45,7 +45,8 @@ Uncomment the three lines in pullMenu.py to test specific days that you know hav
 $ crontab -e
 ```
 add the following code:
+```
 00 14 * * 1-5 python MenuTexter.py D
 00 14 * * 1-5 python MenuTexter.py L
 * * * * * python checkMail.py
-
+```
