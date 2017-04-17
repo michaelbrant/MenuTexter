@@ -9,15 +9,11 @@ $ sudo yum update
 $ sudo easy_install bs4
 $ sudo easy_install configparser
 ```
-```sh
-$ sudo yum update
-$ sudo easy_install bs4
-$ sudo easy_install configparser
-```
-5. Move all code to /home/ec2-user
-6. edit config.cfg with either your own gmail account or add the password that I will give to you. (I'm not posting that here)
+3. Move all code to /home/ec2-user
+4. edit config.cfg with either your own gmail account or add the password that I will give to you. (I'm not posting that here)
 
 Send a text to the gmail saying Start, if you did not add your own then it is cafemenuemail@gmail.com
+
 Next, run python checkMail.py. nano emailList.txt and you should see your phone number in the list.
 At this point running:
 $python MenuTexter.py L
