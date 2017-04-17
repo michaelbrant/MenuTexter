@@ -1,5 +1,7 @@
 # MenuTexter
-Automatically sends texts of Widener University's cafeteria Lunch and Dinner menus
+Automatically sends texts of Widener University's cafeteria Lunch and Dinner menus.
+The HTML is parsed from https://widener.campusdish.com/Commerce/Catalog/Menus.aspx?LocationId=213 using a python library called Beautiful Soup 4
+
 
 To Run the MenuTexter:
 1. Launch a t2.micro Amazon Linux AMI EC2 instance and run the following commands:
@@ -36,8 +38,6 @@ $ python MenuTexter.py D
 will send a text of the dinner menu.
 
 If you are not receiving a text it is quite possible that there is no lunch/dinner menu for today.
-https://widener.campusdish.com/Commerce/Catalog/Menus.aspx?LocationId=213
-
 Uncomment the three lines in pullMenu.py to test specific days that you know have lunch or dinner menus
 
 ###To Make the MenuTexter Automatic
@@ -50,3 +50,5 @@ add the following code:
 00 14 * * 1-5 python MenuTexter.py L
 * * * * * python checkMail.py
 ```
+This will run MenuTexter.py D and MenuTexter.py L every day Monday-Friday during school months at 10AM
+It will also run checkMail.py every minute.
