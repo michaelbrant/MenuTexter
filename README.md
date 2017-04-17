@@ -9,11 +9,11 @@ $ sudo yum update
 $ sudo easy_install bs4
 $ sudo easy_install configparser
 ```
-'''sh
+```sh
 $ sudo yum update
 $ sudo easy_install bs4
 $ sudo easy_install configparser
-'''
+```
 5. Move all code to /home/ec2-user
 6. edit config.cfg with either your own gmail account or add the password that I will give to you. (I'm not posting that here)
 
