@@ -3,7 +3,10 @@ Automatically sends texts of Widener University's cafeteria Lunch and Dinner men
 The HTML is parsed from https://widener.campusdish.com/Commerce/Catalog/Menus.aspx?LocationId=213 using a python library called Beautiful Soup 4
 
 
-To Run the MenuTexter:
+### To Install the MenuTexter:
+You can remotely connect via SSH into ec2-52-207-132-210.compute-1.amazonaws.com with the username ec2-user and the private key that
+I'm not going to post here. This already has the MenuTexter installed using the email menutexter@gmail.com 
+-OR-
 1. Launch a t2.micro Amazon Linux AMI EC2 instance and run the following commands:
 ```sh
 $ sudo yum update
@@ -13,7 +16,8 @@ $ sudo easy_install configparser
 2. Move all code to /home/ec2-user
 3. edit config.cfg with either your own gmail account or add the password that I will give to you. (I'm not posting that here)
 
-Send a text to the gmail saying Start, if you did not add your own then it is cafemenuemail@gmail.com
+### Running the MenuTexter
+Send a text to the gmail saying Start, if you did not add your own then it is menutexter@gmail.com
 
 Next, run 
 ```sh
