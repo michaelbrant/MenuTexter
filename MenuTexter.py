@@ -7,7 +7,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 configParser = configparser.RawConfigParser()
-configFilePath = '/home/ec2-user/config.cfg'
+configFilePath = '/home/ec2-user/MenuTexter/config.cfg'
 configParser.read(configFilePath)
 USERNAME = str(configParser.get('email-login', 'username'))
 PASSWORD = str(configParser.get('email-login', 'password'))
